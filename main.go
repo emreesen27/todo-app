@@ -10,7 +10,7 @@ import (
 func main() {
 
 	e := echo.New()
-	e.POST("/add", controller.AddTodo)
+	e.POST("/addTodo", controller.AddTodo)
 	e.GET("/getTodos", controller.GetTodos)
 	e.DELETE("/deleteTodo/:id", controller.DeleteTodo)
 	e.PUT("/updateTodo/:id", controller.UpdateTodo)
