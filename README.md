@@ -7,9 +7,9 @@ $ docker-compose up -d
 
 ## Endpoints
 
-### Add - Post
+### Add Todo - Post
 ```
-http://localhost:8080/add
+http://localhost:8080/addTodo
 ```
 ##### Body
 
