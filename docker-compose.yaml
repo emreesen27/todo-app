@@ -8,7 +8,6 @@ services:
         - "27017:27017"
       container_name: "todo-db-mongo"
     todo-app:
-      image: "todo-app"
       restart: "on-failure"
       build:
         context: .
