@@ -11,10 +11,9 @@ func main() {
 
 	e := echo.New()
 	e.POST("/add", controller.AddTodo)
-	//e.POST("/getUserProfile", getUserProfile)
-	//	e.GET("/getAllUsers", getAllUsers)
-	//	e.PUT("/updateProfile", updateProfile)
-	//	e.DELETE("/deleteProfile:id", deleteProfile)
+	e.GET("/getTodos", controller.GetTodos)
+	e.DELETE("/deleteTodo/:id", controller.DeleteTodo)
+	e.PUT("/updateTodo/:id", controller.UpdateTodo)
 
 	log.Fatal(e.Start(":8080"))
 
